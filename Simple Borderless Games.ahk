@@ -276,7 +276,7 @@ IniRead, AutoStart, config.ini, General, AutoStart
   {
     Menu,Tray,Check,&AutoStart
     IniWrite, 1, config.ini, General, AutoStart
-    FileCreateShortcut, %A_WorkingDir%\Simple Borderless Games.exe, %APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Simple Borderless Games.lnk
+    FileCreateShortcut, %A_ScriptDir%\Simple Borderless Games.exe, %APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\Simple Borderless Games.lnk, %A_ScriptDir%\
   }
   Else
   {
