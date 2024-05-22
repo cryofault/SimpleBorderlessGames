@@ -1,7 +1,7 @@
 # SimpleBorderlessGames
-* A simple tool to remove game/window borders &amp; position them accordingly using hotkeys.\
+* A simple tool to remove game/window borders &amp; position them accordingly using hotkeys.
 
-* I created this tool using autohotkey out of frustration with other solutions and their lack of non-fullscreen borderless/position saving (important for ultrawide displays) & hotkeys.\
+* I created this tool using autohotkey out of frustration with other solutions and their lack of non-fullscreen borderless/position saving (important for ultrawide displays) & hotkeys.
 
 * Simple Borderless Games is particularly useful for large ultrawide displays because it allows setting and saving your preferred game position/size while still allowing removal of tilebars & borders.
 
