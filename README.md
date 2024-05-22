@@ -6,7 +6,7 @@
 * Simple Borderless Games is particularly useful for large ultrawide displays because it allows setting and saving your preferred game position/size while still allowing removal of tilebars & borders.
 
 * Intallation:
-  - Download binary from release page and and place in preferred directory, run executable or use script manually with AHK.
+  - Download binary from release page and and place in preferred directory then run the executable or use script manually with AHK.
   - Default keybinds:
       - <alt+h> hide borders
       - <alt+f> set position
