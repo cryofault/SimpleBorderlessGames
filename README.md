@@ -12,7 +12,7 @@
       - <alt+f> set position
       - <alt+g> both at once
   - Remember to enable autostart if you want to use functionality regularly.
-  - Simply press your hotkey/keybind while the window you want to target is active/clicked into to toggle its borders/position/size.
+  - Simply press your hotkey/keybind while the window you want to target is clicked into/active to toggle its borders/position/size.
 
 ![image](https://github.com/cryofault/SimpleBorderlessGames/assets/25939455/41289938-dec9-4b41-a271-85f296ba5359)
 ![image](https://github.com/cryofault/SimpleBorderlessGames/assets/25939455/a4163725-5ae5-48db-8c18-a44f5e936ccc)
