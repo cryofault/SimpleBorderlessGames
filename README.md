@@ -1,4 +1,4 @@
-# SimpleBorderlessGames
+# Simple Borderless Games
 * A simple tool to remove game/window borders &amp; position them accordingly using hotkeys.
 
 * I created this tool using [autohotkey](https://www.autohotkey.com/) out of frustration with other solutions and their lack of hotkeys & non-fullscreen borderless/position saving (important for ultrawide displays).
@@ -13,6 +13,8 @@
       - <alt+g> both at once
   - Remember to enable autostart if you want to use functionality regularly.
   - Simply press your hotkey/keybind while the window you want to target is clicked into/active to toggle its borders/position/size.
+
+* Will not affect windows using client side decorations (ex. steam)
 
 ![image](https://github.com/cryofault/SimpleBorderlessGames/assets/25939455/41289938-dec9-4b41-a271-85f296ba5359)
 ![image](https://github.com/cryofault/SimpleBorderlessGames/assets/25939455/a4163725-5ae5-48db-8c18-a44f5e936ccc)
