@@ -58,6 +58,7 @@ IniWrite, %defresLeft%, config.ini, Coordinates, posx
 IniWrite, %defresTop%, config.ini, Coordinates, posy
 IniWrite, %defresRight%, config.ini, Coordinates, sizew
 IniWrite, %defresBottom%, config.ini, Coordinates, sizeh
+IniWrite, 0, config.ini, General, AutoStart
 return
 }
 
