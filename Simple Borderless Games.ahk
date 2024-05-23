@@ -198,9 +198,9 @@ Gui 1: Font, bold
 Gui 1:Add, text,y7, Hotkeys:
 Gui 1: Font, s9
 Gui 1: Font, normal
-Gui 1:Add, text,y+13, - Toggle Window Borders:
-Gui 1:Add, text,y+20, - Toggle Window Position:
-Gui 1:Add, text,y+20, - Toggle Position + Borders:
+Gui 1:Add, text,y+13, Toggle Window Borders:
+Gui 1:Add, text,y+20, Toggle Window Position:
+Gui 1:Add, text,y+20, Toggle Position + Borders:
 Gui 1:Add, Button, w110 x180 y30, border
 GuiControl, 1:, border, Bind Hotkey
 Gui 1:Add, Button, w110 y+10, position
