@@ -54,14 +54,19 @@ FileRead, ttext, %html%
 RegExMatch(ttext, "<a href=""/cryofault/SimpleBorderlessGames/releases/tag/v.+?"">SBG \K[\d.]+", latest_version)
 if (current_version < latest_version)
 {
-Gui 4:Add, text,, New Update Available: %latest_version%
-Gui 4:Add, Button, w200 gdlink, download
-Gui 4:Show,,Updates
+Gui 4:Add, text,, New SBG Update Available: %latest_version%
+Gui 4:Add, Button, w100 x10 y25 gignore, Ignore
+Gui 4:Add, Button, w100 x122 y25 gdlink, Download
+Gui 4:Show,,SBG Updates
 }
 return
 
 dlink:
 Run, https://github.com/cryofault/SimpleBorderlessGames/releases
+return
+
+ignore:
+Gui 4:Hide
 return
 
 ;Initialize Config
