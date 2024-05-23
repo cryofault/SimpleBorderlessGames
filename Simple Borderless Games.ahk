@@ -14,7 +14,9 @@
 ;along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #singleinstance force
+current_version = 1.1
 
+GoSub updatecheck
 GoSub initconfig
 IniRead, prevhotkeyborder, config.ini, Hotkeys, border-hotkey
 IniRead, prevhotkeyposition, config.ini, Hotkeys, position-hotkey
@@ -43,12 +45,32 @@ Return
 
 ;;;;;;;;;;;;
 
+;Check for Updates
+updatecheck:
+url = https://github.com/cryofault/SimpleBorderlessGames/releases
+html = %TEMP%\releases.html
+UrlDownloadToFile, %url%, %html%
+FileRead, ttext, %html%
+RegExMatch(ttext, "<a href=""/cryofault/SimpleBorderlessGames/releases/tag/v.+?"">SBG \K[\d.]+", latest_version)
+if (current_version < latest_version)
+{
+Gui 4:Add, text,, New Update Available: %latest_version%
+Gui 4:Add, Button, w200 gdlink, download
+Gui 4:Show,,Updates
+}
+return
+
+dlink:
+Run, https://github.com/cryofault/SimpleBorderlessGames/releases
+return
+
+;Initialize Config
 initconfig:
 ifnotexist config.ini
 {
 FileInstall, setup.png, setup.png
 Gui 3:Add, Picture,x0 y0 w800 h400 , setup.png
-Gui 3:Show, w800 h400, Test GUI Window
+Gui 3:Show, w800 h400, Setup
 IniWrite, !h, config.ini, Hotkeys, border-hotkey
 IniWrite, !f, config.ini, Hotkeys, position-hotkey
 IniWrite, !g, config.ini, Hotkeys, both-hotkey
