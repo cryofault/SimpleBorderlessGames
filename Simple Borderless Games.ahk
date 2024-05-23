@@ -23,6 +23,7 @@ IniRead, posx, config.ini, Coordinates, posx
 IniRead, posy, config.ini, Coordinates, posy
 IniRead, sizew, config.ini, Coordinates, sizew
 IniRead, sizeh, config.ini, Coordinates, sizeh
+IniRead, AutoStart, config.ini, General, AutoStart
 
 Menu,Tray,NoStandard
 Menu,Tray,Add,&AutoStart,ContextMenu
@@ -33,7 +34,14 @@ Hotkey, %prevhotkeyborder%, border
 Hotkey, %prevhotkeyposition%, position
 Hotkey, %prevhotkeyboth%, both
 
+if AutoStart = 1
+{
+  Menu,Tray,Check,&AutoStart
+}
+
 Return
+
+;;;;;;;;;;;;
 
 initconfig:
 ifnotexist config.ini
