@@ -89,7 +89,7 @@ WinSet, Style, -0x00400000L, A
 WinSet, Style, -0x800000, A
 WinSet, Style, -0x40000, A
 ;edge case border fix
-if (vboth == 0)
+if (vboth != 1)
 {
 WinMove,A,,-100,-100,100,100
 WinMove,A,,x,y,w,h 
@@ -112,7 +112,6 @@ return
 return
 
 ;POSITION/RESIZE WINDOW
-
 position:
 GoSub idparse
 if (togglepos%exeid% != 1)
@@ -134,17 +133,27 @@ return
 return
 
 ;REMOVE BORDERS AND POSITION/RESIZE WINDOW
-
 both:
 vboth = 1
-Gosub border
-Gosub position
+if (toggle%exeid% = 0) && (togglepos%exeid% = 1)
+{
+vboth = 0
+GoSub border
+}
+else if (toggle%exeid% = 1) && (togglepos%exeid% = 0)
+{
+GoSub position
+}
+else
+{
+GoSub border
+GoSub position
+}
 vboth = 0
 return
 
 
 ;GUI
-
 ContextMenu:
 If (A_ThisMenuItem="&Config")
 {
