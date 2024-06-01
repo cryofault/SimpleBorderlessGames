@@ -5,7 +5,7 @@
 
 * Simple Borderless Games is particularly useful for large ultrawide displays because it allows setting and saving your preferred game position/size while still allowing removal of tilebars & borders.
 
-*** May cause unusual behavior when removing borders from certain games & may be efficient to use in tandem with other options like borderless gaming.
+*** May cause unusual behavior when removing borders from certain games & can be used in tandem with other apps like borderless gaming for full coverage.
 
 * Intallation:
   - Download binary from release page and and place in your preferred directory then run the executable or use script manually with AHK.
